@@ -1,0 +1,13 @@
+<app-client-list></app-client-list>
+<!--<a routerLink="/client-new" routerLinkActive="active">Add client</a>-->
+<button (click)="addClient()">Add client</button>
+<div *ngIf="clicked">
+  <div>
+    Cnp: <input #cnp><br>
+    Firstname: <input #firstname><br>
+    Lastname: <input #lastname><br>
+    Age: <input #age><br><br>
+    <button (click)="goBack()">Back</button>
+    <button  (click)="save(cnp.value, firstname.value, lastname.value, age.value)">Save</button>
+  </div>
+</div>

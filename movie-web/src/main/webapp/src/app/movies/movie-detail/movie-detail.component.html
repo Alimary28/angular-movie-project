@@ -1,0 +1,21 @@
+<div *ngIf="movie">
+  <h2>Movie{{movie.title}} details</h2>
+  <div>
+    <label>Movie title: </label> {{movie.title}}
+    <input [(ngModel)]="movie.title" placeholder="title">
+  </div>
+  <div>
+    <label>Movie category: </label> {{movie.category}}
+    <input [(ngModel)]="movie.category" placeholder="category">
+  </div>
+  <div>
+    <label>Movie year: </label> {{movie.year}}
+    <input [(ngModel)]="movie.year" placeholder="year">
+  </div>
+  <div>
+    <label>Movie price: </label> {{movie.price}}
+    <input [(ngModel)]="movie.price" placeholder="price">
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>

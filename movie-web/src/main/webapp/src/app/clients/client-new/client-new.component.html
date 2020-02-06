@@ -1,0 +1,8 @@
+<div>
+  Cnp: <input #cnp><br>
+  Firstname: <input #firstName><br>
+  Lastname: <input #lastName><br>
+  Age: <input #age><br>
+  <button (click)="goBackToClients()">Back</button>
+  <button  (click)="saveClient(cnp.value, firstName.value, lastName.value, age.value)">Save</button>
+</div>

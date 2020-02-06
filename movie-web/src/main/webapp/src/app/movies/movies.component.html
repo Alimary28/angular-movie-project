@@ -1,0 +1,14 @@
+<app-movie-list></app-movie-list>
+<!--<a routerLink="/movie-new" routerLinkActive="active">Add movie</a>-->
+
+<button (click)="addMovie()">Add movie</button>
+<div *ngIf="clicked">
+  <div>
+    Title: <input #title><br>
+    Category: <input #category><br>
+    Year: <input #year><br>
+    Price: <input #price><br><br>
+    <button (click)="goBack()">Back</button>
+    <button  (click)="save(title.value, category.value, year.value, price.value)">Save</button>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div>
+  Title: <input #title><br>
+  Category: <input #category><br>
+  Year: <input #year><br>
+  Price: <input #price><br>
+  <button (click)="goBack()">Back</button>
+  <button  (click)="save(title.value, category.value, year.value, price.value)">Save</button>
+</div>
